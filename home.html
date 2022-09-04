@@ -1,64 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Register Form</title>
+        <meta charset="UTF-8">
+        <title>My Home Portal</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>WELCOME</h1>
-        <p>Exclusive Service Delivery</p>
-        <center>
-            <h3>Register Here</h3>
-            <form action="" method="">
-                <table>
-                    <tr>
-                        <td>Username:</td>
-                        <td>
-                            <input type="text" name="user">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password</td>
-                        <td>
-                            <input type="Password" name="User_pass" maxlength="9">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td>
-                            <input type="email" name="mail">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Gender:</td>
-                        <td>
-                            <input type="radio" name="gender">Male
-                            <input type="radio" name="gender">Female
-                            <input type="radio" name="gender">Others
-                            <input type="radio" name="gender">Prefer not to say
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Phone:</td>
-                        <td>
-                            <select>
-                                <option>+254</option>
-                                <option>+255</option>
-                                <option>+256</option>
-                                <option>+257</option>
-                                <option>+1</option>
-                                <option>+58</option>
-                                <option>+971</option>
-                                <option>+27</option>
-                            </select>
-                            <input type="phone" name="mob_digits" maxlength="9">
-                        </td>
-                        <tr>
-                            <td>
-                                <input type="submit" name="submit" value="Submit">
-                            </td>
-                        </tr>
-                    </tr>
-                </table>
-        </center>
+        <div class="full-page">
+            <div class="navbar">
+                <div>
+                    <a href='home.html'>My Home Portal</a>
+                </div>
+                <nav>
+                    <ul id='Menu Items'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About Us</a></li>
+                        <li><a href='#'>Services</a></li>
+                        <li><a href='#'>Contact</a></li>
+                        <li><button class='loginbtn'
+                            onclick="document.getElementById('login-form') .style.display='block'"
+                            style="width:auto;"></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="login-form" class="login-page">
+                <div class="button-box">
+                    <div> id="button-box">
+                        <div id="btn"></div> 
+                        <button
+                        type="button"onclick="login()" class="toggle-btn">Log In</button>
+                        <button
+                        type="button"onclick="register()" class="toggle-btn">Register</button>
+                    </div>
+                    <form id="login" class="input-group-login">
+                        <input type="text" class="input-field" placeholder='Email Id' required>
+                        <input type="password" class="input-field" placeholder='Enter Password' required>
+                        <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                        <button type="submit"class='submit btn'>Log in</button>
+                        <form>
+                            <form id="register" class="input-group-register">
+                                <input type="text"class='input-field'placeholder='First Name' required>
+                                <input type="text"class='input-field'placeholder='Last Name' required>
+                                <input type="email"class='input-field'placeholder='Email Id' required>
+                                <input type="password"class='input-field'placeholder='Enter Password' required>
+                                <input type="password"class='input-field'placeholder='Confirm Password' required>
+                                <input type="checkbox"class='checkbox'><span>I agree to the terms and conditions</span>
+                                <button type="submit" class="submit-bth">Register</button>
+                            </form>
+                        
+                        </div>
+
+            </div>
+        </div>
+        
     </body>
-</html>
+
+    </html>
