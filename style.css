@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +7,7 @@
 {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient (rgba (0,0,0,0.4),rgba(0,0,0,0.4)), url(images/bg-2.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%),rgba(0, 0, 0, 0.5)50% url(1.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -44,17 +43,17 @@ nav ul li a
     color: rgb(185, 66, 66);
     font-family: sans-serif;
 }
-nav ul button
+nav ul li button
 {
     font-size: 20px;
-    color: #141010;
+    color: #128660;
     outline: none;
     border: none;
     background: transparent;
     cursor: pointer;
     font-family: sans-serif;
 }
-nav ul button:hover
+nav ul li button:hover
 {
     color: rgb(39, 21, 196);
 }
@@ -66,7 +65,7 @@ a
 {
     text-decoration: none;
     color: rgb(202, 33, 90);
-    font-size: 28px;
+    font-size: 28px;  
 }
 #login-form
 {
@@ -74,13 +73,13 @@ a
 }
 .form-box
 {
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 2% auto;
-    background:rgba (0,0,0,0.3);
-    padding: 10px;
-    overflow: hidden;
+    width:380px;
+    height:480px;
+    position:relative;
+    margin:2% auto;
+    background:rgba(0,0,0,0.3);
+    padding:10px;
+    overflow:hidden;
 }
 .button-box
 {
@@ -174,6 +173,6 @@ left: 50px;
 }
 #register input
 {
-    color: rgb(161, 15, 15);
+    color: #ffffff;
     font-size: 15;
 }
