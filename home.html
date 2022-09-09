@@ -12,13 +12,13 @@
                 </div>
                 <nav>
                     <ul id='Menu Items'>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>About Us</a></li>
-                        <li><a href='#'>Services</a></li>
-                        <li><a href='#'>Contact</a></li>
+                        <li><a href='home.html'>Home</a></li>
+                        <li><a href='about.html'>About Us</a></li>
+                        <li><a href='service.html'>Services</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
                         <li><button class='loginbtn'
                         onclick="document.getElementById('login-form') .style.display='block'"
-                        style="width:auto;">Login</button>
+                        style="width:auto;"method='post' action="home.html">Login</button>
                         </li>
                     </ul>
                 </nav> 
@@ -41,6 +41,7 @@
                         type='button'onclick='login()'class='toggle-btn'>Log In</button>
                         <button
                         type='button'onclick='register()'class='toggle-btn'>Register</button>
+                        <script src="script.js"></script>
                     </div>
                     <form id='login' class='input-group-login'>
                         <input type='text'class='input-field'placeholder='Email Id' required>
