@@ -101,24 +101,11 @@ nav ul li a:hover
 {
     color: rgb(49, 12, 211);
 }
-.search
-{
-    width: none;
-    float: right;
-    margin-left: none;
-    margin-top: -40px;
-    padding: 10px;
-    background: transparent;
-}
 .btn
 {
     background: blueviolet;
 }
 .btn:focus
-{
-    outline: none;
-}
-.srch
 {
     outline: none;
 }
